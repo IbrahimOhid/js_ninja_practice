@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For & While Loop Statement</title>
+</head>
+
+<body>
+    <script>
+        // for(i = 0; i <= 10; i++){
+        //     console.log(i);
+        // }
+
+        // const user = ['abul','kabul', 'babul', 'rakibul'];
+        // for(i = 0; i < user.length; i++){
+        //     console.log(i);
+        //     console.log(user[i]);
+        // }
+
+        // let i = 0;
+        // while(i<=10){
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // const product = ['banana', 'apple', 'mango', 'grape'];
+        // let i = 0;
+        // while(i<product.length){
+        //     console.log(product[i]);
+        //     i++;
+        // }
+
+        const products = [
+            {
+                name: 'banana',
+                price: 10,
+                quantity: 3
+            },
+            {
+                name: 'apple',
+                price: 15,
+                quantity: 5
+            }
+        ]
+
+        // function allProduct(){
+        //     for(i = 0; i < products.length; i++){
+        //     console.log(products[i]);
+        // }
+        // }
+        // allProduct();
+        
+        
+        function allProduct(){
+            let singleProduct = '';
+            for(i = 0; i< products.length; i++){
+                singleProduct += `
+                ProductName - ${products[i].name}
+                ProductPrice - ${products[i].price}
+                ProductQuantity - ${products[i].quantity}
+                `
+            }
+            return singleProduct
+        }
+        const finalProduct = allProduct();
+        console.log(finalProduct);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+</head>
+<body>
+    <script>
+        // const userInfo = ['ohid', 13, 3000];
+
+        // const [name, age, salary] = userInfo;
+        // console.log(name, salary);
+
+        const productInfo = {
+            name : 'bag',
+            price : 600,
+            description : 'Good Product',
+            showProduct : function (){
+                return `name = ${this.name}`
+            }
+        }
+        console.log(productInfo.showProduct());
+    </script>
+</body>
+</html>

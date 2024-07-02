@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Data Structure</title>
+</head>
+<body>
+    <script>
+        const product = [
+            {
+                name: 'bag',
+                price: 300,
+                quantity: 5
+            },
+            {
+                name: 'shoe',
+                price: 500,
+                quantity: 2
+            }
+        ]
+
+        function allProduct (){
+            const [product1, product2] = product;
+            return `Name = ${product1.name} Price = ${product1.price} Quantity = ${product1.quantity}`
+        }
+        const finalProduct =  allProduct();
+        console.log(finalProduct);
+    </script>
+</body>
+</html>
